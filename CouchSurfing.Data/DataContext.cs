@@ -33,6 +33,21 @@ namespace CouchSurfing.Data
         {
             protected override void Seed(DataContext context)
             {
+                var roles = new List<Roles>
+                {
+                    new Roles()
+                    {
+                        NameRole = "Admin"
+                    },
+                    new Roles()
+                    {
+                        NameRole = "User"
+                    }
+                };
+                foreach (var role in roles) context.Roleses.Add(role);
+                context.SaveChanges();
+
+
 
                 base.Seed(context);
             }
