@@ -13,6 +13,12 @@ namespace CouchSurfing
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+            routes.MapRoute(
+        name: "register",
+        url: "Account/Register",
+        defaults: new { controller = "Account", action = "Register" });
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

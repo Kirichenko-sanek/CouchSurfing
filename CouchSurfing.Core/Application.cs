@@ -6,7 +6,7 @@ namespace CouchSurfing.Core
     {
         public long IdUser { get; set; }
         public long IdClient { get; set; }
-        public long IdHpuse { get; set; }
+        public long IdHouse { get; set; }
         public DateTime Date { get; set; }
 
         public virtual User User { get; set; }

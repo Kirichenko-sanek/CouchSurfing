@@ -14,7 +14,7 @@ namespace CouchSurfing
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            var container = new WindsorContainer().Install(new AdminInstaller());
+            //var container = new WindsorContainer().Install(new AdminInstaller());
         }
     }
 }

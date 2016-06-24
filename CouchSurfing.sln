@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouchSurfing.Data", "CouchS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouchSurfing.CW", "CouchSurfing.CW\CouchSurfing.CW.csproj", "{494928B5-A10F-403A-AD38-1AC7405FA2C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouchSurfing.BL", "CouchSurfing.BL\CouchSurfing.BL.csproj", "{1C672234-38BC-4162-8FAF-32777A9299F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouchSurfing.Interfases", "CouchSurfing.Interfases\CouchSurfing.Interfases.csproj", "{38DF72E0-8D86-4DE4-9856-C1006E0D3E73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{494928B5-A10F-403A-AD38-1AC7405FA2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{494928B5-A10F-403A-AD38-1AC7405FA2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{494928B5-A10F-403A-AD38-1AC7405FA2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C672234-38BC-4162-8FAF-32777A9299F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C672234-38BC-4162-8FAF-32777A9299F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C672234-38BC-4162-8FAF-32777A9299F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C672234-38BC-4162-8FAF-32777A9299F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38DF72E0-8D86-4DE4-9856-C1006E0D3E73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DF72E0-8D86-4DE4-9856-C1006E0D3E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DF72E0-8D86-4DE4-9856-C1006E0D3E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DF72E0-8D86-4DE4-9856-C1006E0D3E73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

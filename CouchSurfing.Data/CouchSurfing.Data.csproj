@@ -50,7 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
+    <Compile Include="Mapping\ApplicationMap.cs" />
+    <Compile Include="Mapping\CommentMap.cs" />
+    <Compile Include="Mapping\DialogMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -60,6 +64,10 @@
     <ProjectReference Include="..\CouchSurfing.Core\CouchSurfing.Core.csproj">
       <Project>{31d35865-abe2-4dc6-a9c9-e70acb20cc45}</Project>
       <Name>CouchSurfing.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CouchSurfing.Interfases\CouchSurfing.Interfases.csproj">
+      <Project>{38df72e0-8d86-4de4-9856-c1006e0d3e73}</Project>
+      <Name>CouchSurfing.Interfases</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
