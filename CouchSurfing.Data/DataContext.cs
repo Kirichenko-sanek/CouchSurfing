@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CouchSurfing.Core;
+using CouchSurfing.Data.Mapping;
 
 namespace CouchSurfing.Data
 {
@@ -27,6 +28,22 @@ namespace CouchSurfing.Data
         {
             Configuration.LazyLoadingEnabled = true;
             Database.SetInitializer(new CouchSurfingInitializer());
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new ApplicationMap());
+            modelBuilder.Configurations.Add(new CommentMap());
+            modelBuilder.Configurations.Add(new DialogMap());
+            modelBuilder.Configurations.Add(new HouseMap());
+            modelBuilder.Configurations.Add(new HousePhotoMap());
+            modelBuilder.Configurations.Add(new HouseStatusMap());
+            modelBuilder.Configurations.Add(new MassageMap());
+            modelBuilder.Configurations.Add(new PhotoMap());
+            modelBuilder.Configurations.Add(new RolesMap());
+            modelBuilder.Configurations.Add(new StatusMap());
+            modelBuilder.Configurations.Add(new UserInRolesMap());
+            modelBuilder.Configurations.Add(new UserMap());
         }
 
         private class CouchSurfingInitializer : DropCreateDatabaseAlways<DataContext>
