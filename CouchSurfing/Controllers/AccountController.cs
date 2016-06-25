@@ -8,7 +8,9 @@ namespace CouchSurfing.Controllers
 {
     public class AccountController : Controller
     {
-        // GET: Account
+        private readonly IUserMa
+
+
         public ActionResult Register()
         {
             return View();

@@ -15,9 +15,9 @@ namespace CouchSurfing
 
 
             routes.MapRoute(
-        name: "register",
-        url: "Account/Register",
-        defaults: new { controller = "Account", action = "Register" });
+                name: "register",
+                url: "Account/Register",
+                defaults: new {controller = "Account", action = "Register"});
 
             routes.MapRoute(
                 name: "Default",
